@@ -1,9 +1,6 @@
 {
   "version": 2,
   "framework": "vite",
-  "name": "cgpa_calculator",
-  "rootDirectory": "client",
-  "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "rewrites": [
     {
