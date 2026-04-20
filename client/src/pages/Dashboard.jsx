@@ -16,7 +16,7 @@ const MOCK_SEMESTER_DATA = [
 ];
 
 export default function Dashboard() {
-  const { profile, user, refreshProfile } = useAuth();
+  const { profile, user } = useAuth();
   const [semesterData, setSemesterData] = useState([]);
   const [goalCGPA, setGoalCGPA] = useState('');
   const [loading, setLoading] = useState(true);

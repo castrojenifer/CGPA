@@ -18,7 +18,7 @@ import AdminSubjects from './pages/admin/AdminSubjects';
 import AdminStudents from './pages/admin/AdminStudents';
 
 function RootRedirect() {
-  const { user, profile, loading } = useAuth();
+  const { profile, loading } = useAuth();
 
   if (loading) {
     return (

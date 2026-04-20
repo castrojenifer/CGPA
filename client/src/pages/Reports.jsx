@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
 import { calculateCGPAFromGPAs, calculateRequiredGPA } from '../lib/calculations';
@@ -8,7 +8,7 @@ import autoTable from 'jspdf-autotable';
 import { FileDown, Loader2, FileText, Calendar } from 'lucide-react';
 
 export default function Reports() {
-  const { profile } = useAuth();
+  const { profile, user } = useAuth();
   const [semesterData, setSemesterData] = useState([]);
   const [allGrades, setAllGrades] = useState([]);
   const [goalData, setGoalData] = useState(null);
