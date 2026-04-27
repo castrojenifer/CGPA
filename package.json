@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd .. && node -e \"const fs=require('fs'); fs.existsSync('public') && fs.rmSync('public', {recursive:true, force:true}); fs.cpSync('client/dist', 'public', {recursive:true});\"",
+    "build": "cd client && npm install && npm run build && cd .. && node -e \"const fs=require('fs'); fs.existsSync('dist') && fs.rmSync('dist', {recursive:true, force:true}); fs.cpSync('client/dist', 'dist', {recursive:true});\"",
     "install-all": "npm install && cd client && npm install && cd ../server && npm install"
   }
 }
